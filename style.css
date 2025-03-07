@@ -1,0 +1,64 @@
+/* fonte roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ancoras */
+a {
+  text-decoration: none;
+}
+
+/* imagens */
+img {
+  max-width: 100%;
+}
+
+/* html */
+html {
+  font-size: 16px;
+}
+
+/* body */
+body {
+  font-size: 1rem;
+  /* grid layout */
+  display: grid;
+  grid:
+    "header header header header"
+    "hero hero hero hero"
+    "about about about about"
+    "projects projects projects projects"
+    "contact contact contact contact";
+}
+
+/* HEADER */
+header.header {
+  /* define nome das areas do layout grid */
+  grid-area: header;
+}
+/* HERO */
+section.hero {
+  /* define nome das areas do layout grid */
+  grid-area: hero;
+}
+/* ABOUT */
+section.about {
+  /* define nome das areas do layout grid */
+  grid-area: about;
+}
+/* PROJECTS */
+section.projects {
+  /* define nome das areas do layout grid */
+  grid-area: projects;
+}
+/* CONTACT */
+footer.contact {
+  /* define nome das areas do layout grid */
+  grid-area: contact;
+}
