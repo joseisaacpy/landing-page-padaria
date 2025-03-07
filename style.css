@@ -9,6 +9,15 @@
   font-family: "Roboto", sans-serif;
 }
 
+/* variaveis */
+:root {
+  --color1: #941753;
+  --color2: #811144;
+  --color3: #6e0c36;
+  --color4: #5b0627;
+  --color5: #480018;
+}
+
 /* ancoras */
 a {
   text-decoration: none;
@@ -35,13 +44,46 @@ body {
     "about about about about"
     "projects projects projects projects"
     "contact contact contact contact";
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* HEADER */
 header.header {
   /* define nome das areas do layout grid */
   grid-area: header;
+  width: 100%;
+  min-height: 75px;
+  padding: 20px 30px;
+  background-color: var(--color3);
+  color: #fff;
 }
+
+.header .container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  font-size: 2rem;
+}
+
+.header .container-header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  color: #fff;
+}
+
+.header .container-header nav ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.header .container-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
 /* HERO */
 section.hero {
   /* define nome das areas do layout grid */
