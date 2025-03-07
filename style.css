@@ -88,12 +88,72 @@ header.header {
 section.hero {
   /* define nome das areas do layout grid */
   grid-area: hero;
+  background: url(./img/two-breads.jpg) no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  height: 90dvh;
 }
+
+.hero h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+    opacity: 0.4;
+  }
+}
+
+.hero::after {
+  content: url(./img/arrow.svg);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  animation: arrowMove 1s ease-in-out infinite alternate;
+}
+
 /* ABOUT */
 section.about {
   /* define nome das areas do layout grid */
   grid-area: about;
+  /* tambem sera grid */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 20px 30px;
+  background-color: var(--color5);
+  color: #fff;
 }
+
+.about .item-about.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about .item-about.text h3 {
+  font-size: clamp(1.5rem, 3.5vw, 4rem);
+}
+
+.about .item-about.text p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.about .item-about.image img {
+  border-radius: 20px;
+}
+
 /* PROJECTS */
 section.projects {
   /* define nome das areas do layout grid */
