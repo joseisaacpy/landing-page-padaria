@@ -1,5 +1,11 @@
 @media (max-width: 900px) {
+  .header .container-header {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
   .header .container-header nav ul {
-    display: none;
+    display: flex;
   }
 }
