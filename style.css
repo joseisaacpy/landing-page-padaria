@@ -212,4 +212,54 @@ section.projects {
 footer.contact {
   /* define nome das areas do layout grid */
   grid-area: contact;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+  background: linear-gradient(to bottom, var(--color5), var(--color1));
+  color: #fff;
+}
+
+.contact h3 {
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+.contact nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  color: #fff;
+}
+
+.contact nav ul li a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.contact nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.contact .social {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.contact .social i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.contact p {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+.contact p a {
+  color: #fff;
+}
+.contact p a:hover {
+  text-decoration: underline;
 }
